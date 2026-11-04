@@ -1,0 +1,137 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif, system-ui;
+box-sizing: border-box;
+}
+
+
+body {
+    background-color: #97598d;
+}
+/* Fondo de la página en gradiente */
+.container {
+width: 100%;
+min-height: 100vh;
+background: linear-gradient(135deg, #153677, #4e085f);
+padding: 10px;
+}
+/* Tarjeta central de la aplicación */
+.to-do-app {
+width: 100%;
+max-width: 540px;
+background: #e0b5cb;
+margin: 100px auto 20px;
+padding: 40px 30px 70px;
+border-radius: 10px;
+}
+
+
+/* Encabezado */
+.to-do-app h2 {
+color: #002765;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+.to-do-app h2 img {
+width: 30px;
+margin-left: 10px;
+}
+/* Campo de entrada y botón */
+.row {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+background: #ebebeb;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+input {
+flex: 1;
+min-width: 0;
+border: none;
+outline: none;
+background: transparent;
+padding: 10px;
+font-size: 14px;
+}
+button {
+border: none;
+outline: none;
+padding: 16px 50px;
+background: #964e4e;
+color: #f7f4f7;
+font-size: 16px;
+cursor: pointer;
+border-radius: 40px;
+}
+/* Lista de Tareas */
+ul li {
+list-style: none;
+font-size: 17px;
+padding: 12px 40px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+overflow-wrap: anywhere;
+}
+/* Icono de casilla no marcada mediante seudoelemento ::before */
+ul li::before {
+content: '';
+
+
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(img/ico2.png);
+background-size: cover;
+background-position: center;
+top: 12px;
+left: 8px;
+}
+/* Estado de tarea completada */
+ul li.checked {
+color: #555555;
+text-decoration: line-through;
+}
+/* Icono de casilla marcada */
+ul li.checked::before {
+background-image: url(img/icomarcado.png);
+}
+/* Botón de eliminación (Cruz) */
+ul li span {
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555555;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+}
+ul li span:hover {
+background: #9c7d9c;
+}
+
+h3{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    background:#d1b5e4
+}
+
+@media (max-width: 480px) {
+    .to-do-app {
+        margin-top: 40px;
+        padding: 30px 20px 50px;
+    }
+
+    .row button {
+        padding: 14px 28px;
+    }
+}

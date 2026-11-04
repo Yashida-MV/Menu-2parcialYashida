@@ -1,0 +1,70 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family:Verdana, serif;
+}
+
+/* Estilos externos para el botón flotante "Menú" (HTML limpio) */
+.btn-volver {
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Lo ponemos a la derecha para que no choque con el texto de tu header */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+.btn-volver:hover { 
+    background-color: #000; 
+}
+
+header{
+    height: 70px;
+    line-height: 70px;
+    padding-left:25px;
+    background-color: #66e289;
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom:50px;
+}
+
+section{
+    background-color: #c755de;
+}
+
+article{
+    display:flex;
+    /* Cambiado a wrap para permitir que las imágenes bajen en pantallas angostas */
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 10px; /* Un pequeño colchón para las fotos */
+}
+
+img{
+    border:dashed 1px #000000;
+    margin: 2px;
+    padding:1px;
+    width: 14.5%; /* Se mantiene perfecto para ver las 6 en fila en la computadora */
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- REGLAS ADAPTABLES PARA EL CELULAR VERTICAL --- */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem; /* Ajusta el texto del título para que quepa bien en el celular */
+        padding-right: 90px; /* Evita que el texto choque con el botón de menú */
+    }
+
+    img {
+        /* En el celular vertical, acomoda las imágenes en 2 columnas muy ordenadas (3 filas de 2) */
+        width: calc(50% - 6px); 
+        margin: 3px;
+    }
+}

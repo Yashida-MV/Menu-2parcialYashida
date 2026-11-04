@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #d6d6d6; 
+}
+
+/* Único agregado: Estilos para el botón de regreso al menú */
+.btn-volver {
+    position: fixed;
+    top: 15px;
+    right: 15px; 
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+.btn-volver:hover { 
+    background-color: #000; 
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+}
+
+nav {
+    background-color: #ff7f41; 
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    border-bottom: 4px solid #e06526;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.imagenprincipal {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 3px solid #ff7f41;
+}
+
+.imagenprincipal img {
+    width: 550px; 
+    height: auto;
+}
+
+.contenedortarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4 {
+    background-color: white;
+    border: 1px solid #b5b5b5;
+    width: 180px;  
+    height: 220px; 
+    padding: 15px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.producto {
+    width: 80px;
+    height: 80px;
+}
+
+
+.logotipo {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.contenedortarjetas p {
+    font-size: 11px;
+    color: #555;
+}
+
+
+.piedepag {
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    border-top: 1px solid #c5c5c5;
+}
+
+
+.contenido1, .contenido2, .contenido3 {
+    width: 200px; 
+    text-align: left;
+}
+
+.piedepag h2 {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.piedepag p {
+    font-size: 11px;
+    color: #777;
+}
+
+

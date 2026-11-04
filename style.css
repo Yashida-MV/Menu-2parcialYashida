@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* min-height evita que se corte en pantallas táctiles */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8rem; /* Tamaño cómodo para leer en vertical */
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Botones uno abajo del otro */
+    gap: 15px;
+    width: 90%;            /* En el celular ocupa casi todo el ancho */
+    max-width: 300px;      /* En la computadora no se hace gigante, se frena aquí */
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4f46e5;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
